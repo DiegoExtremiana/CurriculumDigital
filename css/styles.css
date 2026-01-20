@@ -1,0 +1,294 @@
+body,
+header,
+main,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0.1em;
+    margin: 0.1em
+}
+
+h2 {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 1.6em;
+    padding-left: 0.2em;
+}
+
+header {
+    grid-column: 1;
+    color: #EBF7FF;
+    margin: 4%;
+}
+
+header h2 {
+    margin: 0.2em;
+    width: 92%;
+    background-color: #00000069;
+    /*Nice*/
+}
+
+main {
+    grid-column: 2;
+    margin: 4%;
+    margin-top: 6%;
+    color: #2A2A46;
+}
+
+main article section {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 0.4em;
+    margin-left: 1%;
+    width: 96%;
+}
+
+main article section:nth-child(even) {
+    background-color: #DDF;
+}
+
+main article h2 {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    border-top: 1px solid #999;
+    border-BOTTOM: 1px solid #999;
+}
+
+#intro {
+    margin-bottom: 0.4em;
+}
+
+.fechas {
+    grid-column: 1;
+}
+
+.content {
+    grid-column: 2;
+}
+
+#idiomas section h3 {
+    grid-column: 2;
+}
+
+#idiomas section p {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 25% 1%;
+    width: 60%;
+    box-shadow: 0.2em 0.4em #00000042;
+}
+
+#nombre {
+    font-size: 3em;
+    padding: 0.2em;
+    margin: 2%;
+}
+
+.habs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0.3em;
+    margin-right: 5%;
+}
+
+.habs:nth-child(even) {
+    grid-column: 1;
+}
+
+.habs label {
+    padding: 0.1em;
+}
+
+.habs:nth-child(odd) {
+    grid-column: 2;
+}
+
+/* Estilos para la sección de habilidades */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-left: 0.3em;
+    margin-right: 5%;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.skill-item label {
+    min-width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.skill-bar {
+    width: 60%;
+    height: 15px;
+    background-color: #DDF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(to right, #ff4500, #ff7700);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Clases para diferentes niveles de habilidad */
+.nivel-1 { width: 10%; }
+.nivel-2 { width: 20%; }
+.nivel-3 { width: 30%; }
+.nivel-4 { width: 40%; }
+.nivel-5 { width: 50%; }
+.nivel-6 { width: 60%; }
+.nivel-7 { width: 70%; }
+.nivel-8 { width: 80%; }
+.nivel-9 { width: 90%; }
+.nivel-10 { width: 100%; }
+
+#perfil section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.3em;
+    margin-right: 5%;
+}
+
+input[type="range"] {
+    appearance: none;
+    width: 95%;
+    height: 7px;
+    background-color: #DDF;
+    background-repeat: no-repeat;
+}
+
+.rango1 {
+    background: linear-gradient(#ff4500, #ff4500);
+    background-size: 20%;
+}
+
+.rango2 {
+    background: linear-gradient(#ff4500, #ff4500);
+    background-size: 40%;
+}
+
+.rango3 {
+    background: linear-gradient(#ff4500, #ff4500);
+    background-size: 60%;
+}
+
+.rango4 {
+    background: linear-gradient(#ff4500, #ff4500);
+    background-size: 80%;
+}
+
+.rango5 {
+    background: linear-gradient(#ff4500, #ff4500);
+    background-size: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+}
+
+input[type=”range”]::-moz-range-thumb {
+    appearance: none;
+}
+
+input[type=”range”]::-ms-thumb {
+    appearance: none;
+}
+
+input[type="submit"] {
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+}
+
+a {
+    color: #EBF7FF;
+}
+
+/* Movil */
+@media screen and (max-width:720px) {
+    /* Con el fin de hacer el css mas responsive se corrige desde js las alturas */
+    /* body {
+        background: linear-gradient(180deg, #00416A 34%, #EBF7FF 37%);
+    } */
+}
+
+/* Tablet */
+@media screen and (min-width:721px) and (max-width:1200px) {
+    #perfil section {
+        display: block;
+    }
+
+    #perfil section p {
+        font-size: 0.9em;
+    }
+
+    body {
+        margin-left: 9%;
+        margin-right: 9%;
+        margin-top: -1em;
+        display: grid;
+        grid-template-columns: 33% 66%;
+        background: linear-gradient(90deg, #00416A 34%, #EBF7FF 37%);
+    }
+}
+
+/* PC */
+@media screen and (min-width:1201px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -1em;
+        display: grid;
+        grid-template-columns: 33% 66%;
+        background: linear-gradient(90deg, #00416A 34%, #EBF7FF 37%);
+    }
+}
+
+@media print {
+    #perfil section {
+        display: block;
+    }
+
+    #perfil section p {
+        font-size: 0.9em;
+    }
+
+    abbr,
+    a {
+        text-decoration: none;
+    }
+
+    h2 {
+        padding-top: 0.05em;
+        padding-bottom: 0.05em;
+    }
+
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 33% 66%;
+        background: linear-gradient(90deg, #00416A 34%, #EBF7FF 37%);
+    }
+}
