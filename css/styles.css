@@ -290,6 +290,13 @@ a {
         margin: 1%;
     }
 
+    /* Ocultar enlaces de redes sociales en impresión */
+    #intro p:has(a[href*="github.com"]) ,
+    #intro p:has(a[href*="linkedin.com"]),
+    #intro p:has(a[href*="vercel.app"]) {
+        display: none;
+    }
+
     body {
         margin-left: 5%;
         margin-right: 5%;
