@@ -284,6 +284,12 @@ a {
         padding-bottom: 0.05em;
     }
 
+    #nombre {
+        font-size: 2em !important;
+        padding: 0.1em;
+        margin: 1%;
+    }
+
     body {
         margin-left: 5%;
         margin-right: 5%;
