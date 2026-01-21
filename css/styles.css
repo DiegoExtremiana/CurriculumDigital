@@ -304,4 +304,12 @@ a {
         grid-template-columns: 33% 66%;
         background: linear-gradient(90deg, #00416A 34%, #EBF7FF 37%);
     }
+
+    .skills-section {
+        gap: 0.2em;
+    }
+
+    .skill-item {
+        margin-bottom: 0.2em;
+    }
 }
