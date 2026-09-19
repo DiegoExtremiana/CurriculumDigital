@@ -1,14 +1,14 @@
-import { getRepoLanguages } from '../services/github.js';
+import { getRepoStack } from '../services/github.js';
 import { skillBar } from '../components/skillBar.js';
-import { computeSkills } from './compute.js';
+import { measureSkills, combineSkills } from './compute.js';
 
-export async function initGithubSkills() {
-    const container = document.getElementById('github-skills');
+export async function initGithubSkills(declared) {
+    const container = document.getElementById('skills');
     if (!container) return;
 
     try {
-        const skills = computeSkills(await getRepoLanguages());
-        if (skills.length) container.replaceChildren(...skills.map(skillBar));
+        const measured = measureSkills(await getRepoStack());
+        container.replaceChildren(...combineSkills(measured, declared).map(skillBar));
     } catch (e) {
         console.warn('No se pudieron cargar las estadísticas de GitHub, se mantienen las habilidades por defecto.', e);
     }

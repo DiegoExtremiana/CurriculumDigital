@@ -1,13 +1,10 @@
-// respaldo si falla la API de GitHub
-export const languageSkills = [
+// niveles propios: valen hasta que responde GitHub y para lo que GitHub no puede ver (repos privados)
+export const skills = [
     { label: 'HTML', level: 10 },
     { label: 'SCSS / CSS', level: 9 },
     { label: 'JavaScript', level: 8 },
     { label: 'TypeScript', level: 6 },
-    { label: 'PHP', level: 8 }
-];
-
-export const otherSkills = [
+    { label: 'PHP', level: 8 },
     { label: 'Laravel', level: 6 },
     { label: 'React JS', level: 7 },
     { label: 'Vite', level: 7 },

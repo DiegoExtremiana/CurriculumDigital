@@ -8,7 +8,7 @@ import { certifications } from './certifications.js';
 import { otherExperience } from './otherExperience.js';
 
 export { profile } from './profile.js';
-export { languageSkills, otherSkills } from './skills.js';
+export { skills } from './skills.js';
 
 export const sections = [
     summary,

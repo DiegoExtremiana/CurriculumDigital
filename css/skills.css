@@ -6,10 +6,6 @@
     margin-right: 5%;
 }
 
-#github-skills {
-    display: contents;
-}
-
 .skill-item {
     display: flex;
     align-items: center;
