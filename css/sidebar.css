@@ -1,0 +1,40 @@
+header {
+    color: var(--color-light);
+}
+
+header a {
+    color: var(--color-light);
+}
+
+header h2 {
+    margin: 0.2em;
+    width: 92%;
+    background-color: #00000069;
+    /*Nice*/
+}
+
+header img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 25% 1%;
+    width: 60%;
+    box-shadow: 0.2em 0.4em #00000042;
+}
+
+#nombre {
+    font-size: 3em;
+    padding: 0.2em;
+    margin: 2%;
+}
+
+#puesto {
+    font-size: 1.2em;
+    margin: 0 2% 1em;
+    padding: 0 0.5em;
+    text-wrap: balance;
+}
+
+#intro {
+    margin-bottom: 0.4em;
+}

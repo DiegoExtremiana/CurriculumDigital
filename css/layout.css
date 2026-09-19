@@ -1,0 +1,45 @@
+header {
+    grid-column: 1;
+    margin: 4%;
+}
+
+main {
+    grid-column: 2;
+    margin: 4%;
+    margin-top: 6%;
+}
+
+/* Movil */
+@media screen and (max-width: 720px) {
+    body {
+        background: linear-gradient(180deg,
+                var(--color-primary) calc(var(--header-height, 0px) * 1.04 - 10px),
+                var(--color-light) calc(var(--header-height, 0px) * 1.04 + 10px));
+    }
+}
+
+@media screen and (min-width: 721px),
+print {
+    body {
+        display: grid;
+        grid-template-columns: 33% 66%;
+        background: linear-gradient(90deg, var(--color-primary) 34%, var(--color-light) 37%);
+    }
+}
+
+/* PC */
+@media screen and (min-width: 721px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -1em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 721px) and (max-width: 1200px) {
+    body {
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+}

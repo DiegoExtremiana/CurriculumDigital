@@ -1,0 +1,94 @@
+main {
+    color: var(--color-text);
+}
+
+main a {
+    color: var(--color-primary);
+}
+
+main article section {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 0.4em;
+    margin-left: 1%;
+    width: 96%;
+}
+
+main article section:nth-of-type(odd) {
+    background-color: var(--color-tint);
+}
+
+main article h2 {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.fechas,
+.categoria {
+    grid-column: 1;
+}
+
+.content {
+    grid-column: 2;
+}
+
+.content ul {
+    margin: 0.2em 0;
+    padding-left: 1.4em;
+}
+
+.content li {
+    padding: 0.1em;
+}
+
+.nota {
+    font-style: italic;
+    margin: 0.4em 0.3em 0.4em 1%;
+}
+
+.categoria p {
+    font-weight: bold;
+}
+
+.grupos {
+    columns: 20em;
+    column-gap: 0.4em;
+    margin-left: 1%;
+    width: 96%;
+}
+
+.grupo {
+    break-inside: avoid;
+    background-color: var(--color-tint);
+    padding: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.grupo h3 {
+    font-size: 1em;
+}
+
+.grupo ul {
+    margin: 0.2em 0;
+    padding-left: 1.2em;
+}
+
+#perfil section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.3em;
+    margin-right: 5%;
+}
+
+/* Tablet */
+@media screen and (min-width: 721px) and (max-width: 1200px) {
+    #perfil section {
+        display: block;
+    }
+
+    #perfil section p {
+        font-size: 0.9em;
+    }
+}

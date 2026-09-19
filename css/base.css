@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #00416A;
+    --color-light: #EBF7FF;
+    --color-tint: #DDF;
+    --color-text: #2A2A46;
+    --color-border: #999;
+    --color-accent: #ff4500;
+    --color-accent-light: #ff7700;
+}
+
+body,
+header,
+main,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
+h2 {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 1.6em;
+    padding-left: 0.2em;
+}

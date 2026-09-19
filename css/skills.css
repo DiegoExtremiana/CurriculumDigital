@@ -1,0 +1,49 @@
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-left: 0.3em;
+    margin-right: 5%;
+}
+
+#github-skills {
+    display: contents;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.skill-item span {
+    min-width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.skill-bar {
+    width: 60%;
+    height: 15px;
+    background-color: var(--color-tint);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(to right, var(--color-accent), var(--color-accent-light));
+    transition: width 0.5s ease-in-out;
+}
+
+.nivel-1 { width: 10%; }
+.nivel-2 { width: 20%; }
+.nivel-3 { width: 30%; }
+.nivel-4 { width: 40%; }
+.nivel-5 { width: 50%; }
+.nivel-6 { width: 60%; }
+.nivel-7 { width: 70%; }
+.nivel-8 { width: 80%; }
+.nivel-9 { width: 90%; }
+.nivel-10 { width: 100%; }
