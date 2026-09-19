@@ -23,9 +23,15 @@ header img {
 }
 
 #nombre {
-    font-size: 3em;
+    font-size: clamp(1.75rem, 9vw, 3rem);
     padding: 0.2em;
     margin: 2%;
+}
+
+@media screen and (min-width: 721px) {
+    #nombre {
+        font-size: clamp(1.5rem, 3.3vw, 3rem);
+    }
 }
 
 #puesto {
@@ -37,4 +43,53 @@ header img {
 
 #intro {
     margin-bottom: 0.4em;
+}
+
+.boton {
+    display: inline-block;
+    margin: 0.4em 0.3em 0.8em;
+    padding: 0.4em 0.9em;
+    border: 1px solid var(--color-light);
+    border-radius: 0.4em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton:hover,
+.boton:focus-visible {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+
+.fuente {
+    margin: 0.2em 0.3em 0.6em;
+    font-size: 0.8em;
+    opacity: 0.9;
+}
+
+.punto {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-right: 0.4em;
+    border-radius: 50%;
+    background-color: var(--color-live);
+    animation: latido 2s infinite;
+}
+
+@keyframes latido {
+    0% {
+        box-shadow: 0 0 0 0 #4ade8099;
+    }
+
+    70%,
+    100% {
+        box-shadow: 0 0 0 0.5em #4ade8000;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .punto {
+        animation: none;
+    }
 }

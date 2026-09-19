@@ -23,11 +23,11 @@ export async function getRepoStack() {
         const current = Object.fromEntries(entries);
 
         cache.write(current);
-        return Object.values(current);
+        return { repos: Object.values(current), live: true };
     } catch (error) {
         if (!Object.keys(saved).length) throw error;
         console.warn('GitHub no responde, se usan los últimos datos guardados.', error);
-        return Object.values(saved);
+        return { repos: Object.values(saved), live: false };
     }
 }
 

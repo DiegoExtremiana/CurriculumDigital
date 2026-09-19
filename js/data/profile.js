@@ -1,7 +1,8 @@
 export const profile = {
     name: 'DIEGO EXTREMIANA PALACÍN',
     role: 'Desarrollador Web Full-Stack',
-    photo: { src: 'recursos/imagenPerfil.png', alt: 'Foto de perfil' },
+    photo: { src: 'recursos/imagenPerfil.png', alt: 'Foto de Diego Extremiana' },
+    cv: { text: 'Descargar CV (PDF)', href: 'recursos/CV_Diego_Extremiana.pdf' },
     contact: [
         { label: 'Email', text: 'dextremiana1998@gmail.com', href: 'mailto:dextremiana1998@gmail.com' },
         { label: 'Teléfono', text: '610 521 810', href: 'tel:+34610521810' },

@@ -55,7 +55,7 @@ function rank(groups, totalRepos) {
         const repoShare = repoCount / totalRepos;
         const codeShare = Math.sqrt(bytes / maxBytes);
         const level = Math.max(1, Math.min(10, Math.round(((repoShare + codeShare) / 2) * 10)));
-        return { label, level, bytes };
+        return { label, level, bytes, measured: true };
     });
 }
 
